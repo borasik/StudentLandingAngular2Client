@@ -1,0 +1,46 @@
+<html>
+
+<head>
+  <title>Angular QuickStart</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+
+  <script>window.module = 'aot';</script>
+  
+  <!-- Polyfill(s) for older browsers -->
+  <script src="node_modules/core-js/client/shim.min.js"></script>
+
+  <script src="node_modules/zone.js/dist/zone.js"></script>
+  <script src="node_modules/reflect-metadata/Reflect.js"></script>
+  <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="/build/libs/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="/build/libs/css/bootstrap.min.css">
+  <!-- endinject -->
+
+  <!-- custom:css -->
+  <link rel="stylesheet" href="/Kentico-Temp/nslsc/nslsc.css">
+  <!-- endinject -->
+
+  <script src="systemjs.config.js"></script>
+  <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+
+<body>
+  <my-app>Loading AppComponent content here ...</my-app>
+
+  <!-- inject:js -->
+  <script src="/build/libs/js/bootstrap.min.js"></script>
+  <script src="/build/libs/js/jquery.min.js"></script>
+  <script src="/build/libs/js/jquery.slim.min.js"></script>
+  <!-- endinject -->
+
+  <!-- custom:js -->
+  <!-- endinject -->
+</body>
+
+</html>
